@@ -1,0 +1,152 @@
+/* Step 1: Make a simple box and rotate it on hover */
+/* Copilot prompt: Create a .box class with width 100px, height 100px, background darkgreen, centered text. Make it rotate 30deg when hovered over. */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: darkgreen;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: rotate(30deg);
+}
+
+
+/* Step 2: Make the rotation smooth */
+/* Copilot prompt: Add a transition to .box so that transform rotates smoothly over 2s with ease timing function. */
+.box {
+    transition: transform 2s ease;
+}
+.box:hover {
+    transform: rotate(30deg);
+}
+
+
+/* Step 3: Animate multiple properties at once */
+/* Copilot prompt: Make .box also change background-color and border-radius on hover. Each property should have its own duration and easing function. */
+.box {
+    transition: transform 2s ease, background-color 1s linear, border-radius 1.5s ease-in-out;
+}
+.box:hover {
+    transform: rotate(30deg);
+    background-color: lightgreen;
+    border-radius: 20px;
+}
+
+/* Step 4: Create multiple boxes to show different easing functions */
+/* Copilot prompt: Create .div1 to .div5 with same size and background. Add transition for width over 2s. Each div should use a different transition-timing-function: linear, ease, ease-in, ease-out, cubic-bezier(0,0.16,0.53,2.03). */
+.div1, .div2, .div3, .div4, .div5 {
+    width: 100px;
+    height: 100px;
+    background-color: darkgreen;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    transition: width 2s;
+}
+.div1 {
+    transition-timing-function: linear;
+}
+
+.div2 {
+    transition-timing-function: ease;
+}
+
+.div3 {
+    transition-timing-function: ease-in;
+}
+
+.div4 {
+    transition-timing-function: ease-out;
+}
+
+.div5 {
+    transition-timing-function: cubic-bezier(0,0.16,0.53,2.03);
+}
+
+
+/* Step 5: Pause an animation when hovered or clicked */
+/* Copilot prompt: Add a container #container and a child #child. Animate #child moving around using keyframes. Make it pause when #container is active (clicked). */
+#container {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    overflow: hidden;
+    position: relative;
+}
+
+
+#child {
+    width: 50px;
+    height: 50px;
+    background-color: darkgreen;
+    position: absolute;
+    animation: moveAround 4s linear infinite;
+}
+#container:active #child {
+    animation-play-state: paused;
+}
+@keyframes moveAround {
+    0% { top: 0; left: 0; }
+    25% { top: 0; left: 150px; }
+    50% { top: 150px; left: 150px; }
+    75% { top: 150px; left: 0; }
+    100% { top: 0; left: 0; }
+}
+
+/* Step 6: Create a keyframe animation for #child */
+/* Copilot prompt: Animate #child to move in a square path over 3s using ease-in timing. Change background color at 50% and 100% keyframes. Make the animation repeat infinitely and alternate direction. */
+#child {
+    animation: moveSquare 3s ease-in infinite alternate;
+}
+@keyframes moveSquare {
+    0% { top: 0; left: 0; background-color: dark
+green; }
+    25% { top: 0; left: 150px; background-color: darkgreen; }
+    50% { top: 150px; left: 150px; background-color: lightgreen; }
+    75% { top: 150px; left: 0; background-color: lightgreen; }
+    100% { top: 0; left: 0; background-color: darkgreen; }
+}
+
+/* Copilot prompt:
+Fix the transition effects for the boxes .div1, .div2, .div3, .div4, .div5
+so that the width changes on hover and each box demonstrates a different easing function:
+- .div1: linear
+- .div2: ease
+- .div3: ease-in
+- .div4: ease-out
+- .div5: ease-in-out
+Make sure the starting width is 100px and on hover it expands to 400px. 
+Include proper transition-duration and timing-function so that the animation is visible.
+*/
+.div1:hover {
+    width: 400px;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+.div2:hover {
+    width: 400px;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+.div3:hover {
+    width: 400px;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
+.div4:hover {
+    width: 400px;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+.div5:hover {
+    width: 400px;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}   

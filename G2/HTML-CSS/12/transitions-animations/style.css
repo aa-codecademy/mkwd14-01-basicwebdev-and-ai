@@ -1,0 +1,43 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  border: 2px solid navy;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+
+  /* transition: background-color 0.48s, box-shadow 0.48s, border-radius 2s; */
+}
+
+.box:hover {
+  /* background-color: red; */
+  /* border-radius: 50%; */
+  /* box-shadow: 5px 5px 25px #0e0075; */
+  /* transition: background-color 0.18s, box-shadow 0.18s, border-radius 1s; */
+  /* animation: nudge 0.3s ease-in-out; */
+  /* animation-fill-mode: forwards; */
+  /* transform: scale(2.25); */
+  transform: translate(-50%, -50%);
+}
+.box:active {
+  transform: scale(0.95);
+}
+
+@keyframes nudge {
+  0% {
+    transform: initial;
+    /* background-color: blue; */
+    /* border-radius: initial; */
+  }
+  50% {
+    transform: rotate(10deg);
+    /* background-color: purple; */
+    /* border-radius: 50%; */
+  }
+  100% {
+    transform: initial;
+    /* background-color: rgb(0, 255, 68); */
+    /* border-radius:25%; */
+  }
+}

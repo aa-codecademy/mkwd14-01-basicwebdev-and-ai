@@ -1,0 +1,47 @@
+/* Copilot prompt:
+style only the first line of the first paragraph, not all paragraphs, in pseudoelements.html  using CSS.
+Change its color and font? */
+p:first-of-type::first-line {
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+/* Copilot prompt:
+Style just the first letter of a paragraph?
+Maybe make it a different color or larger? */
+p::first-letter {
+    color: chartreuse;
+    font-size: 2em;
+}
+
+/* Copilot prompt:
+Add a shape or an icon before second paragraph starts using CSS?
+Maybe a colored circle before the text? */
+p:nth-of-type(2)::before {
+    content: "";
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+
+/* Copilot prompt:
+Insert an image after my first paragraph content using CSS?
+Maybe use the ::after pseudo-element? */
+p:first-of-type::after {
+    content: url('https://via.placeholder.com/30');
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* Copilot prompt:
+Change how the text looks  when I select it.
+Maybe give the selected part a different color and background? */
+::selection {
+    color: white;
+    background-color: black;
+}

@@ -1,0 +1,191 @@
+/* Copilot prompt:
+Having seen copilot.html in this same folder, Add media queries to make this section responsive:
+- For screens wider than 768px, show the divs in a 3-column row.
+- For screens between 480px and 768px, show them in two columns.
+- For screens smaller than 480px, stack them vertically. Ignore other .css files.*/
+/* style.css */
+
+.layout-example {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.layout-example > div {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* For screens wider than 768px, show the divs in a 3-column row */
+@media screen and (min-width: 769px) {
+    .layout-example > div {
+        width: 33.33%;
+    }
+}
+
+/* For screens between 480px and 768px, show them in two columns */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .layout-example > div {
+        width: 50%;
+    }
+}
+
+/* For screens smaller than 480px, stack them vertically */
+@media screen and (max-width: 480px) {
+    .layout-example > div {
+        width: 100%;
+    }
+}
+
+
+
+/* rework above css without using flexbox, just media queries and floats */
+.layout-example {
+    overflow: hidden; /* Clear floats */
+}
+.layout-example > div {
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+}
+/* For screens wider than 768px, show the divs in a 3-column row */
+@media screen and (min-width: 769px) {
+    .layout-example > div {
+        width: 33.33%;
+    }
+}
+/* For screens between 480px and 768px, show them in two columns */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .layout-example > div {
+        width: 50%;
+    }
+}
+/* For screens smaller than 480px, stack them vertically */
+@media screen and (max-width: 480px) {
+    .layout-example > div {
+        width: 100%;
+    }
+}
+
+/* Add some basic styling for visibility */
+.layout-example > div {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.layout-example > div:nth-child(odd) {
+    background-color: #e0e0e0;
+}
+.layout-example > div:nth-child(even) {
+    background-color: #d0d0d0;
+}
+.layout-example > div:hover {
+    background-color: #c0c0c0;
+}
+.layout-example > div:active {
+    background-color: #b0b0b0;
+}
+.layout-example > div:focus {
+    outline: 2px solid #000;
+}
+.layout-example > div:visited {
+    background-color: #a0a0a0;
+}
+.layout-example > div:link {
+    background-color: #909090;
+}
+.layout-example > div:checked {
+    background-color: #808080;
+}
+.layout-example > div:disabled {
+    background-color: #707070;
+}
+.layout-example > div:enabled {
+    background-color: #606060;
+}
+.layout-example > div:hover {
+    cursor: pointer;
+}
+.layout-example > div {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+.layout-example > div {
+    transition: background-color 0.3s ease;
+}
+.layout-example > div {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.layout-example > div {
+    border-radius: 4px;
+}
+.layout-example > div {
+    margin: 5px;
+}
+.layout-example > div {
+    padding: 20px;
+}
+.layout-example > div {
+    text-transform: uppercase;
+}
+.layout-example > div {
+    letter-spacing: 1px;
+}
+.layout-example > div {
+    word-wrap: break-word;
+}
+.layout-example > div {
+    white-space: nowrap;
+}
+.layout-example > div {
+    overflow: hidden;
+}
+.layout-example > div {
+    text-overflow: ellipsis;
+}
+.layout-example > div {
+    box-sizing: border-box;
+}
+.layout-example > div {
+    display: block;
+}
+
+.layout-example > div {
+    position: relative;
+}
+.layout-example > div {
+    z-index: 1;
+}
+.layout-example > div {
+    opacity: 1;
+}
+.layout-example > div {
+    visibility: visible;
+}
+.layout-example > div {
+    float: left;
+}
+.layout-example > div {
+    clear: both;
+}
+.layout-example > div {
+    vertical-align: top;
+}
+.layout-example > div {
+    text-align: center;
+}
+.layout-example > div {
+    line-height: 1.5;
+}
+
+.layout-example > div {
+    font-size: 16px;
+}
+.layout-example > div {
+    font-family: Arial, sans-serif;
+}
+.layout-example > div {
+    color: #333;
+}
