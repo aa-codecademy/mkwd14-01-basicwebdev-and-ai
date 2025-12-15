@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        /* .container {
+            display: grid;
+
+            grid-template-columns: 200px 1fr ;
+            grid-template-rows: auto 1fr auto;
+
+            grid-template-areas:
+                "header  header"
+                "sidebar main"
+                "footer  footer";
+
+            gap: 10px;
+        }
+
+        header {
+            grid-area: header;
+            background: lightblue;
+        }
+
+        aside {
+            grid-area: sidebar;
+            background: lightgray;
+        }
+
+        main {
+            grid-area: main;
+            background: lightgreen;
+        }
+
+        footer {
+            grid-area: footer;
+            background: lightcoral;
+        } */
+
+        .container {
+            display: grid;
+
+            grid-template-columns: 200px 1fr 200px;
+            grid-template-rows: auto 1fr auto;
+
+            grid-template-areas:
+                "left   header  right"
+                "left   main    right"
+                "left   footer  right";
+
+            gap: 10px;
+        }
+
+        .left {
+            grid-area: left;
+            background: lightgray;
+        }
+
+        .right {
+            grid-area: right;
+            background: lavender;
+        }
+
+        header {
+            grid-area: header;
+            background: lightblue;
+        }
+
+        main {
+            grid-area: main;
+            background: lightgreen;
+        }
+
+        footer {
+            grid-area: footer;
+            background: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        <header>Header</header>
+        <aside>Sidebar</aside>
+        <main>Main Content</main>
+        <footer>Footer</footer>
+    </div> -->
+    <div class="container">
+        <aside class="sidebar left">Left Sidebar</aside>
+        <header>Header</header>
+        <main>Main Content</main>
+        <aside class="sidebar right">Right Sidebar</aside>
+        <footer>Footer</footer>
+    </div>  
+</body>
+</html>
