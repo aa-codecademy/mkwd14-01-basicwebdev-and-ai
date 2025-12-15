@@ -39,6 +39,8 @@
     * [Responsive design](./Class13/responsive-design/)
   * Class 14
     * [Flex box](./Class14/flex-box/)
+  * Class 15
+    * [Grid](./Class15/grid-presentation/)
   * Tools
     * [VsCode and Github](./Tools/VSCodeAndGithub/)
 
@@ -54,6 +56,7 @@
   * [Mdn](https://developer.mozilla.org/en-US/docs/Web/HTML)
   * [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
   * [Flexbox froggy](https://flexboxfroggy.com/)
+  * [Grid garden](https://cssgridgarden.com/)
 
 
 ## Contact
