@@ -40,7 +40,7 @@
   * Class 14
     * [Flex box](./Class14/flex-box/)
   * Tools
-    * [VsCode and Github](./Tools/VSCode and Github/)
+    * [VsCode and Github](./Tools/VSCodeAndGithub/)
 
   * The repository for the example code [Link](https://github.com/aa-codecademy/mkwd14-01-basicwebdev-and-ai/tree/main/G1)
 
