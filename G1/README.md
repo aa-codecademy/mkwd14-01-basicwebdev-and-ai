@@ -52,6 +52,7 @@
 * Usefull links
   * [Github desktop](https://docs.github.com/en/desktop/overview/getting-started-with-github-desktop)
   * [Mdn](https://developer.mozilla.org/en-US/docs/Web/HTML)
+  * [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 
 ## Contact
